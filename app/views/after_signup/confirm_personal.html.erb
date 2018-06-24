@@ -1,0 +1,17 @@
+<H1>Personal</H1>
+<%= current_user.email %>
+<%= form_for @user, url: wizard_path do |f| %>
+
+    
+    <div><%= f.label :city %><br />
+    <%= f.text_field :city %></div>
+
+    <div><%= f.label :place %><br />
+    <%= f.text_field :place %></div>
+
+    <div><%= f.label :state %><br />
+    <%= f.text_field :state %></div>
+
+    
+    <div><%= f.submit "Next" %></div>
+<% end %>

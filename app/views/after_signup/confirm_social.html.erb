@@ -1,0 +1,10 @@
+<h1>Socail Form</h1>
+<%= form_for current_user, url: wizard_path do |f| %>
+
+    
+    <div><%= f.label :state %><br />
+    <%= f.text_field :state %></div>
+
+    
+    <div><%= f.submit "Next" %></div>
+<% end %>

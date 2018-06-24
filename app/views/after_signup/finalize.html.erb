@@ -1,0 +1,11 @@
+<h1>Finalize Info</h1>
+
+<%= form_for @user, url: wizard_path do |f| %>
+
+    
+    <div><%= f.label :place %><br />
+    <%= f.text_field :place %></div>
+
+    
+    <div><%= f.submit "Finish" %></div>
+<% end %>
