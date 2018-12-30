@@ -21,11 +21,11 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-role :app, %w{deploy_user@54.169.202.54}
-role :web, %w{deploy_user@54.169.202.54}
-role :db,  %w{deploy_user@54.169.202.54}
+role :app, %w{deploy_user@54.169.202.54s}
+role :web, %w{deploy_user@54.169.202.54s}
+role :db,  %w{deploy_user@54.169.202.54s}
 set :ssh_options, {
-   keys: %w(<absolute-path-to-your-ec2-key-pair-file>),
+   keys: %w(aws-eb.pem),
    forward_agent: false,
    auth_methods: %w(publickey password)
  }
