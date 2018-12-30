@@ -22,4 +22,8 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: hello_world_production
+  username: hello_world
+  password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
+  host: <%= ENV['HELLO_WORLD_DATABASE_HOST'] %>
+  port: <%= ENV['HELLO_WORLD_DATABASE_PORT'] %>
