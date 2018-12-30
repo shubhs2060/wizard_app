@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
+  adapter: pg
   database: hello_world_production
   username: hello_world
   password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
